@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'balqis';
+  src: url('../fonts/BALQIS.woff2'), url('../fonts/BALQIS.woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+/* lato-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* lato-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/lato-v24-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* lato-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Georgia.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* lato-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/Georgia-Bold.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+:root {
+  --primapy-light: #ffffff;
+
+  --primapy-light-dark: #d3d3d3;
+  --primapy-dark: #909090;
+  --primapy-ddark: #4e5665;
+  --primapy-dddark: #505050;
+  --primary-gold: #ecb84c;
+}
+html {
+  box-sizing: border-box;
+}
+* {
+  /*завжди пишеться в код  */
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h6 {
+  margin: 0;
+}
+*::after,
+*::before {
+  box-sizing: border-box;
+  /* щоб правилтно наслідувались властивості від батьків */
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+a {
+  color: inherit;
+  /* щоб наслідувався колір зсилок від батьків*/
+  text-decoration: none;
+  /* підкреслення */
+}
+.big-container {
+  max-width: 1220px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #505050;
+  background-color: #ffffff;
+  scroll-behavior: smooth;
+}
+.header__top {
+  background-image: url(../images/fon.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding: 40px;
+}
+.header__top-inner {
+  border: 2px solid var(--primary-gold);
+  border-bottom: none;
+  display: flex;
+
+  flex-direction: column;
+  height: 100%;
+  color: #ffffff;
+}
+.header__title {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  font-family: Georgia;
+  font-size: 200px;
+  font-weight: 700;
+  margin: auto;
+}
+.header__text {
+  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+  font-family: Georgia;
+  font-size: 24px;
+  font-weight: 400;
+}
